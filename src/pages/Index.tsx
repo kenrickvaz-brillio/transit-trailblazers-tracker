@@ -4,6 +4,7 @@ import { Package, MapPin, Clock, Users, TrendingUp } from 'lucide-react';
 import Dashboard from '@/components/Dashboard';
 import PackageList from '@/components/PackageList';
 import MapView from '@/components/MapView';
+import DriversView from '@/components/DriversView';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 
