@@ -80,12 +80,15 @@ const Index = () => {
 
         {/* Main Content Tabs */}
         <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-          <TabsList className="grid w-full grid-cols-3 mb-8">
+          <TabsList className="grid w-full grid-cols-4 mb-8">
             <TabsTrigger value="dashboard" className="text-sm font-medium">
               Dashboard
             </TabsTrigger>
             <TabsTrigger value="packages" className="text-sm font-medium">
               Package List
+            </TabsTrigger>
+            <TabsTrigger value="drivers" className="text-sm font-medium">
+              Drivers
             </TabsTrigger>
             <TabsTrigger value="map" className="text-sm font-medium">
               Live Map
@@ -98,6 +101,10 @@ const Index = () => {
 
           <TabsContent value="packages" className="space-y-6">
             <PackageList />
+          </TabsContent>
+
+          <TabsContent value="drivers" className="space-y-6">
+            <DriversView />
           </TabsContent>
 
           <TabsContent value="map" className="space-y-6">
